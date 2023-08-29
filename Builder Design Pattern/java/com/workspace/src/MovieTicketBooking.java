@@ -1,12 +1,12 @@
 package com.workspace.src;
 
 public class MovieTicketBooking {
-    private final String movieName;
-    private final int totalTickets;
-    private final int popcorn;
-    private final int pizza;
-    private final int burger;
-    private final int coke;
+    private final String movieName;             //Required
+    private final int totalTickets;             //Required
+    private final int  popcorn;                 //Optional
+    private final int pizza;                    //Optional
+    private final int burger;                   //Optional
+    private final int coke;                     //Optional
 
     public MovieTicketBooking(Builder builder) {
         this.movieName = builder.movieName;
@@ -18,12 +18,12 @@ public class MovieTicketBooking {
     }
 
     public static class Builder{
-        private final String movieName;
-        private final int totalTickets;
-        private int popcorn;
-        private int pizza;
-        private int burger;
-        private int coke;
+        private final String movieName;         //Required
+        private final int totalTickets;         //Required
+        private int popcorn;                    //Optional
+        private int pizza;                      //Optional
+        private int burger;                     //Optional
+        private int coke;                       //Optional
 
         public Builder(String movieName, int totalTickets) {
             this.movieName = movieName;
